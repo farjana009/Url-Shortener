@@ -1,4 +1,4 @@
-#generate-short-url
+# generate-short-url
 Create short url using Laravel and VueJs.
 
 
@@ -29,5 +29,5 @@ How to run
 5. Now run `php artisan serve` to run the laravel project or if you change any vue component file you must run `npm run dev` to see the changes or `npm run watch` for watch mode.
 6. finnaly, open your browser and visit `http://127.0.0.1:8000/`.
 
-#N.B.
+# N.B.
 You can check out this link `https://github.com/laravel/ui/tree/3.x` for details on installing VueJs frontend package with Laravel
