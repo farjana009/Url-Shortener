@@ -1,2 +1,33 @@
-# Url-Shortener
-Create short URL and URL checked using Google Safe Browsing API
+#generate-short-url
+Create short url using Laravel and VueJs.
+
+
+Features
+---
+* Create a form, that allows adding URL and system generates short unique URL,
+* The format of generated URL: example.com/[hash],
+* The URL is shortened till 6 symbols hash, which contains alphanumeric symbols,
+* Prevent to add duplicate URL and instead of generating new short URL, show previously created,
+* Upon submit, the URL is checked using the, "Google Safe Browsing" API
+(https://developers.google.com/safe-browsing/v4/lookup-api),
+* And when the short URL is finally opened, the user is redirected to the original URL.
+
+
+Requirement
+---
+* Laravel 8
+* VueJs 2.6.12
+* MySQL
+
+
+How to run
+---
+1. download the code then extract or you can clone this project by using this command `git clone -b master  https://github.com/farjana009/generate-short-url.git` through git bash.
+2. open `.env` file and create a database in phpMyAdmin with the name given there.
+3. After that run this command `php artisan migrate` to create all the tables in phpMyAdmin.
+4. And then run `npm install` from command line window to download a package and it's dependencies that is defined in a `package.json` file and generates a node_modules folder with the installed modules.
+5. Now run `php artisan serve` to run the laravel project or if you change any vue component file you must run `npm run dev` to see the changes or `npm run watch` for watch mode.
+6. finnaly, open your browser and visit `http://127.0.0.1:8000/`.
+
+#N.B.
+You can check out this link `https://github.com/laravel/ui/tree/3.x` for details on installing VueJs frontend package with Laravel
